@@ -23,7 +23,7 @@ def bruteForce(cipher):
 plain = "Hello, this is a test to see if the caesar cipher works."
 inp = 0
 while (inp != -1):
-    print("Enter 1 to encryp, 0 to decrypt, 2 to brute force a message or -1 to exit")
+    print("Enter 1 to encrypt, 0 to decrypt, 2 to brute force a message or -1 to exit")
     inp = int(input("> "))
     print(inp)
     if (inp == 1):
