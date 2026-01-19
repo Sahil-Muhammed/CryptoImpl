@@ -13,6 +13,8 @@ def decrypt(cipher, shift):
     for char in cipher:
         if (char in alphabet):
             out = out + alphabet[(alphabet.index(char) - shift) % 26]
+        else:
+            out = out + char
     return out
 
 def bruteForce(cipher):
@@ -43,6 +45,7 @@ while (inp != -1):
     elif (inp == 2):
         print("Enter ciphertext: ")
         cipher = input("> ")
+        cipher = cipher.lower()
         bruteForce(cipher)
     elif (inp == -1):
         break;
